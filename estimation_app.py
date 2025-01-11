@@ -5,7 +5,7 @@ import cv2
 import os
 
 # Set default demo image
-DEMO_IMAGE = 'stand.jpg'
+DEMO_IMAGE = 'dead.jpg'
 
 # Define body parts and pose pairs
 BODY_PARTS = {
