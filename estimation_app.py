@@ -49,7 +49,7 @@ else:
 
 # Display original image
 st.subheader("Original Image")
-st.image(image, caption="Original Image", use_column_width=True)
+st.image(image, caption="Original Image", use_container_width=True)
 
 # Threshold slider for detection
 thres = st.slider(
@@ -104,7 +104,7 @@ output = poseDetector(np.array(image))
 
 # Display the output
 st.subheader('Pose Estimated')
-st.image(output, caption="Pose Estimation", use_column_width=True)
+st.image(output, caption="Pose Estimation", use_container_width=True)
 
 # Option to download the output image
 output_path = "output_image.png"
