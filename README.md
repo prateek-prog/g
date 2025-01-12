@@ -12,7 +12,6 @@ This project implements a **Human Pose Estimation** system using OpenCV and Tens
 ## Requirements
 - Python 3.x
 - OpenCV
-- TensorFlow
 - Streamlit
 - NumPy
 - PIL (Pillow)
@@ -22,8 +21,7 @@ This project implements a **Human Pose Estimation** system using OpenCV and Tens
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/sanz2105/Human-pose-estimation-openCV.git
-   cd Human-pose-estimation-openCV
+   git clone https://github.com/prateek-prog/g.git
    ```
 
 2. **Install Dependencies**:
@@ -31,14 +29,12 @@ This project implements a **Human Pose Estimation** system using OpenCV and Tens
    It is recommended to use a virtual environment to avoid conflicts with other projects.
 
    ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   pip install -r requirements.txt
+   pip install requirements.txt
    ```
 
 3. **Download the Pre-trained Model**:
 
-   The project uses the pre-trained pose estimation model `graph_opt.pb`. You can download it from [this link](https://github.com/sanz2105/Human-pose-estimation-openCV/releases) or use any compatible pre-trained model. Place it in the project directory.
+   The project uses the pre-trained pose estimation model `graph_opt.pb`. You can download it from [this link](https://github.com/prateek-prog/Human-pose-estimation-openCV/releases) or use any compatible pre-trained model. Place it in the project directory.
 
 ### Running the App
 
@@ -47,12 +43,12 @@ This project implements a **Human Pose Estimation** system using OpenCV and Tens
    To run the app locally, use the following command:
 
    ```bash
-   streamlit run estimation_app.py
+   python -m streamlit run estimation_app.py
    ```
 
 2. **Access the App**:
 
-   Open your browser and navigate to `http://localhost:8501` to interact with the app.
+   Open your browser and navigate to `https://power-123.streamlit.app` to interact with the app.
 
 ## How to Use the App
 
@@ -66,13 +62,10 @@ This project implements a **Human Pose Estimation** system using OpenCV and Tens
 - `estimation_app.py`: Main Streamlit app that handles file upload, pose detection, and image display.
 - `pose_estimation.py`: Contains the pose detection logic using OpenCV’s deep learning module (`dnn`).
 - `graph_opt.pb`: Pre-trained model file for pose estimation (must be downloaded and placed in the project directory).
-- `stand.jpg`: Demo image used for testing the app when no image is uploaded.
+- `dead.jpg`: Demo image used for testing the app when no image is uploaded.
 
 ## Contributing
 
 Feel free to fork this repository and contribute by submitting pull requests. All contributions are welcome!
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/sanz2105/Human-pose-estimation-openCV/blob/main/LICENSE) file for details.
 
