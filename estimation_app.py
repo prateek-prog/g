@@ -5,7 +5,7 @@ import cv2
 
 
 # Set default demo image
-DEMO_IMAGE = 'dead.jpg'
+DEMO_IMAGE = 'sreelela.jpg'
 
 # Define body parts and pose pairs
 BODY_PARTS = {
@@ -103,8 +103,8 @@ st.subheader('Pose Estimated')
 st.image(output, caption="Pose Estimation", use_container_width=True)
 
 # Option to download the output image
-output_path = "output_image.png"
+output_path = "pose-estimated.png"
 cv2.imwrite(output_path, output)
-st.download_button('Download Pose Estimated Image', output_path, file_name='pose_estimation.png')
+st.download_button('Download Pose Estimated Image', output_path, file_name='pose-estimated.png')
 
 st.markdown('---')
