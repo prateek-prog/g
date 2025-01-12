@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 import numpy as np
 import cv2
-import os
+
 
 # Set default demo image
 DEMO_IMAGE = 'dead.jpg'
@@ -36,16 +36,12 @@ img_file_buffer = st.file_uploader(
     "Upload an image (jpg/jpeg/png)", type=["jpg", "jpeg", "png"]
 )
 
-# Handle demo image if no file is uploaded
 if img_file_buffer is not None:
-    # Read uploaded image
-    image = Image.open(img_file_buffer)
+    image = np.array(Image.open(img_file_buffer))
+
 else:
-    if os.path.exists(DEMO_IMAGE):
-        image = Image.open(DEMO_IMAGE)
-    else:
-        st.error(f"Demo image '{DEMO_IMAGE}' not found. Please upload an image.")
-        st.stop()
+    demo_image = DEMO_IMAGE
+    image = np.array(Image.open(demo_image))
 
 # Display original image
 st.subheader("Original Image")
