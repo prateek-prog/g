@@ -58,7 +58,6 @@ thres = st.slider(
 thres = thres / 100.0  # Convert to percentage (0-1 scale)
 
 # Pose detection function
-#@st.cache(hash_funcs={np.ndarray: lambda x: str(x.shape)}, allow_output_mutation=True)
 def poseDetector(frame):
     frameWidth = frame.shape[1]
     frameHeight = frame.shape[0]
