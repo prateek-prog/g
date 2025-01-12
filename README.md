@@ -34,7 +34,7 @@ This project implements a **Human Pose Estimation** system using OpenCV and Tens
 
 3. **Download the Pre-trained Model**:
 
-   The project uses the pre-trained pose estimation model `graph_opt.pb`. You can download it from [this link](https://github.com/prateek-prog/Human-pose-estimation-openCV/releases) or use any compatible pre-trained model. Place it in the project directory.
+   The project uses the pre-trained pose estimation model `graph_opt.pb`. You can download it from [this link](https://github.com/prateek-prog/g/releases) or use any compatible pre-trained model. Place it in the project directory.
 
 ### Running the App
 
